@@ -1,7 +1,10 @@
 /**
- * Created with JetBrains WebStorm.
- * User: trentcioran
- * Date: 6/23/12
- * Time: 11:24 PM
- * To change this template use File | Settings | File Templates.
+ @class Pod widget provider
  */
+define(['pods/text', 'pods/image'], function(TextPod, ImagePod) {
+
+    return {
+        name: 'Pods',
+        items: [new TextPod(), new ImagePod()]
+    };
+});
