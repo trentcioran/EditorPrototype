@@ -5,17 +5,10 @@
 define(['prototype'], function() {
 
     var proto = Class.create({
-        name: 'widget',
-        icon: 'http://placehold.it/260x180',
 
         initialize: function() {},
-        render: function() {},
-        getWidgetConfig: function() {
-            return {
-                name: this.name,
-                icon: this.icon
-            };
-        }
+
+        render: function() {}
     });
 
     return proto;

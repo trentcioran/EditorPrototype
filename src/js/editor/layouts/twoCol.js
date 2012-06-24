@@ -12,5 +12,11 @@ define(['jquery', 'layouts/base'], function($j, Layout) {
         }
     });
 
-    return proto;
+    return {
+        name: 'Two',
+        /* Popover element data */
+        title: 'Single Layout',
+        content: 'Use this layout when you want to have a two columns',
+        prototype: proto
+    };
 });

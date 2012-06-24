@@ -12,5 +12,8 @@ define(['jquery', 'pods/base'], function($j, Pod) {
         }
     });
 
-    return proto;
+    return {
+        name: 'Image',
+        prototype: proto
+    };
 });

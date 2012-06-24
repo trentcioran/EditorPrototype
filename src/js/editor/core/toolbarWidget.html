@@ -1,7 +1,7 @@
-<div class="row toolbar-element">
+<div class="row toolbar-element" rel="popover" title="{{title}}" data-content="{{content}}">
     <div class="span1">
         <a href="#" class="thumbnail">
-            <img src="{{icon}}" alt="">
+            <img src="{{icon}}{{^icon}}http://placehold.it/260x180{{/icon}}" alt="">
         </a>
     </div>
     <div class="span1">{{name}}</div>

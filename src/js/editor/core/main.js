@@ -2,18 +2,21 @@
 @module Core module
  Responsible for loading all editor components
  */
-define(['jquery', 'text!editor/core/mainLayout.html',
+define(['jquery', 'prototype', 'text!editor/core/mainLayout.html',
     'core/toolbar', 'core/topToolbar', 'core/editorArea', 'layouts', 'pods'],
-    function($j, template, Toolbar, TopToolbar, Editor, layouts, pods){
+    function($j, $, template, Toolbar, TopToolbar, Editor, layouts, pods){
 
     var _toolbarArea;
     var _widgetToolbar;
     var _editorArea;
 
+    var allWidgets = [layouts.items, pods.items].flatten();
+
+
     var layoutTbar = new Toolbar(layouts);
     var podTbar = new Toolbar(pods);
     var topTbar = new TopToolbar();
-    var editor = new Editor();
+    var editor = new Editor(allWidgets);
 
     return {
         /**

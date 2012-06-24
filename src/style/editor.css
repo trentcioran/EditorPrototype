@@ -1,35 +1,23 @@
-.show-grid {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.show-grid [class*="span"] {
-    background-color: #EEE;
-    text-align: center;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    min-height: 30px;
-    line-height: 30px;
-}
 
 #editor-area {
     border: 1px solid #a9a9a9;
-}
-.droppable-active {
-    border: 1px solid blue;
-    background-color: blue;
-}
-.ui-selected {
-    background: #F39814;
-    color: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
-.toolbar-element {
-    padding-left: 20px;
-    margin-bottom: 5px;
+.droppable-active {
+    border: 1px solid blue !important;
 }
-.toolbox > div.t-container > div.title {
+
+.toolbox {
     margin-top: 5px;
     margin-bottom: 5px;
+    padding-top: 5px;
 }
+
+.toolbox > div > h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+

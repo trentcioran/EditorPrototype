@@ -1,10 +1,10 @@
 /**
  @class Pod widget provider
  */
-define(['pods/text', 'pods/image'], function(TextPod, ImagePod) {
+define(['pods/text', 'pods/image'], function(TextPodDefinition, ImagePodDefinition) {
 
     return {
         name: 'Pods',
-        items: [new TextPod(), new ImagePod()]
+        items: [TextPodDefinition, ImagePodDefinition]
     };
 });

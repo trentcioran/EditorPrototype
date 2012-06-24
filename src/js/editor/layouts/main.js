@@ -1,10 +1,10 @@
 /**
  @class Layout widget provider
  */
-define(['layouts/single', 'layouts/twoCol'], function(SingleLayout, TwoColLayout) {
+define(['layouts/single', 'layouts/twoCol'], function(SingleLayoutDefinition, TwoColLayoutDefinition) {
 
     return {
         name: 'Layouts',
-        items: [ new SingleLayout(), new TwoColLayout()]
+        items: [SingleLayoutDefinition, TwoColLayoutDefinition]
     };
 });

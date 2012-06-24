@@ -4,20 +4,23 @@
 define(['jquery', 'prototype', 'text!editor/core/toolbarWidget.html'], function($j, Prototype, template){
 
     var proto = Class.create({
-        _component: null,
+        _definition: null,
         _ele: null,
 
-        initialize: function(component) {
-            console.log('Toolbar Widget for: ' + component.name);
+        initialize: function(definition) {
+            console.log('Toolbar Widget for: ' + definition.name);
 
-            this._component = component;
+            this._definition = definition;
         },
         render: function(ele) {
-            console.log('Render toolbar widget: ' + this._component.name);
+            console.log('Render toolbar widget: ' + this._definition.name);
 
-            this._ele = ele;
+            this._ele = $j(Mustache.render(template, this._definition))
+                .popover();
+            this._ele.data('widget-name', this._definition.name);
 
-            ele.append(Mustache.render(template, this._component.getWidgetConfig()));
+            ele.append(this._ele);
+
         }
     });
 
