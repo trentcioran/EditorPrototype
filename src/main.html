@@ -3,14 +3,109 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Editor Prototype</title>
+
     <link type="text/css" href="style/bootstrap.css" rel="stylesheet" />
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/knockout.js"></script>
-    <script type="text/javascript" src="js/prototype.js"></script>
-    <script type="text/javascript" src="js/ckeditor.js"></script>
+    <link type="text/css" href="style/editor.css" rel="stylesheet" />
+
+    <script type="text/javascript" data-main="js/main" src="js/require.js"></script>
+
 </head>
 <body>
+
+    <div class="container">
+
+        <div class="row show-grid">
+            <div class="span3">
+                <!-- LAYOUTS -->
+                <div class="row toolbox">
+                    <div class="span3">
+
+                        <div class="row title">
+                            <div class="span3">
+                                <h4>Layouts</h4>
+                            </div>
+                        </div>
+
+                        <!-- TOOLBAR ELEMENT -->
+                        <div class="row container toolbar-element">
+                            <div class="span1">
+                                <a href="#" class="thumbnail">
+                                    <img src="http://placehold.it/260x180" alt="">
+                                </a>
+                            </div>
+                            <div class="span1">
+                                Simple
+                            </div>
+                        </div>
+
+                        <!-- TOOLBAR ELEMENT -->
+                        <div class="row container toolbar-element">
+                            <div class="span1">
+                                <a href="#" class="thumbnail">
+                                    <img src="http://placehold.it/260x180" alt="">
+                                </a>
+                            </div>
+                            <div class="span1">
+                                Two column
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PODS -->
+                <div class="row toolbox">
+
+                    <div class="span3">
+                        <div class="row title">
+                            <div class="span3">
+                                <h4>Pods</h4>
+                            </div>
+                        </div>
+
+                        <!-- TOOLBAR ELEMENT -->
+                        <div class="row container toolbar-element">
+                            <div class="span1">
+                                <a href="#" class="thumbnail">
+                                    <img src="http://placehold.it/260x180" alt="">
+                                </a>
+                            </div>
+                            <div class="span1">
+                                Text
+                            </div>
+                        </div>
+
+                        <!-- TOOLBAR ELEMENT -->
+                        <div class="row container toolbar-element">
+                            <div class="span1">
+                                <a href="#" class="thumbnail">
+                                    <img src="http://placehold.it/260x180" alt="">
+                                </a>
+                            </div>
+                            <div class="span1">
+                                Image
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="span9">
+                <div class="row">
+                    <div class="span9">
+                        <div id="topSpace">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span9" id="editor-area">editor area</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <textarea id="_placeholder" style="display: none;"></textarea>
 
 </body>
 </html>
