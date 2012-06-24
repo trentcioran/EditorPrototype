@@ -21,3 +21,32 @@
     padding-bottom: 10px;
 }
 
+.resize-box {
+    margin: 3px;
+    border: 1px solid gray !important;
+}
+
+.resize-box:hover {
+    margin: 3px;
+    border: 1px solid blue !important;
+}
+
+div.editor-element div.handler, div.element-content {
+    margin: 3px;
+}
+
+.handler {
+    margin: 2px;
+    cursor: pointer;
+}
+
+.drag-handler {
+}
+
+.drag-handler:hover {
+    cursor: move;
+}
+
+.remove-handler {
+}
+

@@ -8,12 +8,18 @@ define(['jquery', 'pods/base'], function($j, Pod) {
         initialize: function () {
             this.name = 'Image';
         },
-        render: function($super) {
+        render: function(ele) {
+            this._ele = $j('<span>Image!</span>');
+
+            ele.append(this._ele);
         }
     });
 
     return {
         name: 'Image',
+        /* Popover element data */
+        title: 'Image',
+        content: 'An element to display an image',
         prototype: proto
     };
 });

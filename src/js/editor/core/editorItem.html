@@ -1,10 +1,25 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<li class="editor-element" id="editorItem-{{id}}">
+    <div class="resize-box">
+        <a href="#" class="btn-small handler drag-handler pull-right"><i class="icon-move"></i>Move</a>
+        <a href="#" class="btn-small handler remove-handler pull-right"><i class="icon-remove"></i>Delete</a>
+        <a href="#" class="btn-small handler properties-handler pull-right"><i class="icon-list-alt"></i>Properties</a>
 
-</body>
-</html>
+        <div class="element-content">
+            <!-- ACTUAL WIDGET EDITOR HERE -->
+        </div>
+    </div>
+
+    <div class="modal hide fade element-remove">
+        <div class="modal-header">
+            <button class="close" data-dismiss="modal">×</button>
+            <h3>Remove element</h3>
+        </div>
+        <div class="modal-body">
+            <p>You are about to loose all the changes realized on the element. Do you want to continue?</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+            <a href="#" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+</li>

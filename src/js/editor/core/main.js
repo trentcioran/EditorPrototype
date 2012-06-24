@@ -18,6 +18,41 @@ define(['jquery', 'prototype', 'text!editor/core/mainLayout.html',
     var topTbar = new TopToolbar();
     var editor = new Editor(allWidgets);
 
+    var wireEvents = function() {
+        console.log('setting up main events');
+
+        // initialize the preview modal
+        $j('#previewBtn').click(function() {
+            $j('#preview-modal').modal('show');
+        });
+
+        // save functions
+        $j('#saveBtn').click(function() {
+            console.log('saving newsletter...');
+
+            $j('#save-modal').modal('show');
+            // reset animation
+            $j('#save-modal').find('div.bar').css({
+                width: '0%'
+            });
+            $j('#save-modal').find('.btn.disabled')
+                .button('loading');
+
+            // simulate saving
+            $j('#save-modal').find('div.bar')
+                .animate({
+                    width: '100%'
+                }, 2000, function() {
+                    console.log('newsletter saved');
+
+                    $j('#save-modal').find('.btn.disabled')
+                        .button('complete');
+                });
+        });
+
+        console.log('setting up main events, done.');
+    };
+
     return {
         /**
          @method initializes UI elements and wires up events
@@ -35,6 +70,8 @@ define(['jquery', 'prototype', 'text!editor/core/mainLayout.html',
             podTbar.render(_toolbarArea);
             topTbar.render(_widgetToolbar);
             editor.render(_editorArea);
+
+            wireEvents();
 
             console.log('Initialization complete.');
         }
