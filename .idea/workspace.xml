@@ -2,32 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84eda97a-e9af-4638-a9d8-d766b3e9eed0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/dependency/mustache/mustache.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/core/editorArea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/core/mainLayout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/core/toolbar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/core/toolbar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/core/toolbarWidget.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/core/toolbarWidget.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/core/topToolbar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/core/widgetBase.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/layouts/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/layouts/twoCol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/pods/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/pods/image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/editor/pods/text.js" />
-      <change type="DELETED" beforePath="C:\Projects\EditorPrototype\src\js\editor\actionToolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\EditorPrototype\src\js\editor\editor.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\EditorPrototype\src\js\editor\widget.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Projects\EditorPrototype\src\js\editor\widgetPanel.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Projects\EditorPrototype\src\index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/main.js" afterPath="$PROJECT_DIR$/src/js/editor/core/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/layouts/main.js" afterPath="$PROJECT_DIR$/src/js/editor/layouts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/pods/main.js" afterPath="$PROJECT_DIR$/src/js/editor/pods/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main.js" afterPath="$PROJECT_DIR$/src/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/editorArea.js" afterPath="$PROJECT_DIR$/src/js/editor/core/editorArea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/mainLayout.html" afterPath="$PROJECT_DIR$/src/js/editor/core/mainLayout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/toolbar.js" afterPath="$PROJECT_DIR$/src/js/editor/core/toolbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/toolbarWidget.html" afterPath="$PROJECT_DIR$/src/js/editor/core/toolbarWidget.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/toolbarWidget.js" afterPath="$PROJECT_DIR$/src/js/editor/core/toolbarWidget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/widgetBase.js" afterPath="$PROJECT_DIR$/src/js/editor/core/widgetBase.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.html" afterPath="$PROJECT_DIR$/src/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/editor.css" afterPath="$PROJECT_DIR$/src/style/editor.css" />
     </list>
     <ignored path="EditorPrototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +32,97 @@
     <favorites_list name="EditorPrototype" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="toolbar.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/toolbar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="36" column="29" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.6435331">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="toolbarWidget.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/toolbarWidget.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="19" column="82" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="widgetBase.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/widgetBase.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="31" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="editorArea.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="26" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="editor.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/style/editor.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="32" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="78" selection-start="224" selection-end="224" vertical-scroll-proportion="-3.9230769">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mainLayout.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/mainLayout.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="33" selection-start="86" selection-end="86" vertical-scroll-proportion="0.036756758">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="toolbar.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/toolbar.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="23" selection-start="16" selection-end="23" vertical-scroll-proportion="-0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="toolbarWidget.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/toolbarWidget.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="-0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -68,13 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/js/main.js" />
-        <option value="$PROJECT_DIR$/src/main.html" />
-        <option value="$PROJECT_DIR$/src/js/editor/core/toolbarWidget.js" />
-        <option value="$PROJECT_DIR$/src/js/editor/core/widgetToolbar.js" />
-        <option value="$PROJECT_DIR$/src/js/editor/core/main.js" />
-        <option value="$PROJECT_DIR$/src/js/editor/core/widgetBase.js" />
-        <option value="$PROJECT_DIR$/src/js/editor/layouts/base.js" />
         <option value="$PROJECT_DIR$/src/js/editor/pods/base.js" />
         <option value="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
         <option value="$PROJECT_DIR$/src/js/editor/layouts/twoCol.js" />
@@ -82,8 +149,15 @@
         <option value="$PROJECT_DIR$/src/js/editor/pods/image.js" />
         <option value="$PROJECT_DIR$/src/js/editor/layouts/main.js" />
         <option value="$PROJECT_DIR$/src/js/editor/pods/main.js" />
-        <option value="$PROJECT_DIR$/src/js/editor/core/editorArea.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/topToolbar.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/toolbar.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/widgetBase.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/toolbarWidget.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/editorArea.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/toolbarWidget.html" />
+        <option value="$PROJECT_DIR$/src/style/editor.css" />
+        <option value="$PROJECT_DIR$/src/main.html" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/mainLayout.html" />
       </list>
     </option>
   </component>
@@ -172,6 +246,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EditorPrototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EditorPrototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -293,80 +385,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EditorPrototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EditorPrototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dependency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EditorPrototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EditorPrototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dependency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EditorPrototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EditorPrototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dependency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jquery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -421,7 +439,11 @@
       <created>1340511979520</created>
       <updated>1340511979520</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="requirejs support completed, added comments">
+      <created>1340524482702</created>
+      <updated>1340524482702</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -433,13 +455,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16130732" sideWeight="0.670082" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16130732" sideWeight="0.670082" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991803" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -485,7 +507,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added requirejs to handle dependency loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirejs support completed, added comments" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -499,56 +521,15 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="added requirejs to handle dependency loading" />
+    <MESSAGE value="requirejs support completed, added comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="290" selection-end="290" vertical-scroll-proportion="0.16540541">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="324" selection-end="324" vertical-scroll-proportion="0.30389065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="73" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/pods/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="63" selection-end="63" vertical-scroll-proportion="0.035751842">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="38" selection-start="42" selection-end="42" vertical-scroll-proportion="0.017875921">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="16" selection-start="55" selection-end="55" vertical-scroll-proportion="0.035751842">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="453" selection-end="453" vertical-scroll-proportion="0.2502629">
           <folding />
         </state>
       </provider>
@@ -581,20 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="65" selection-start="69" selection-end="69" vertical-scroll-proportion="0.017875921">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/toolbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="21" selection-start="264" selection-end="269" vertical-scroll-proportion="0.12513144">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/core/topToolbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="83" selection-start="87" selection-end="87" vertical-scroll-proportion="0.017875921">
@@ -602,16 +569,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/toolbarWidget.js">
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="30" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0893796">
+        <state line="14" column="25" selection-start="453" selection-end="453" vertical-scroll-proportion="0.2502629">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/core/widgetBase.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="158" selection-end="158" vertical-scroll-proportion="0.05362776">
+        <state line="15" column="31" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/toolbarWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="82" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/toolbarWidget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/toolbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="23" selection-start="16" selection-end="23" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/editor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="78" selection-start="224" selection-end="224" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/mainLayout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="33" selection-start="86" selection-end="86" vertical-scroll-proportion="0.036756758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="26" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/toolbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="29" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.6435331">
           <folding />
         </state>
       </provider>

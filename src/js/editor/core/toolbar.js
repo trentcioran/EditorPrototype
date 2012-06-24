@@ -23,16 +23,20 @@ define(['jquery', 'text!editor/core/toolbar.html', 'core/toolbarWidget'],
         render: function(ele) {
             console.log('Render toolbar.');
 
-            this._ele = ele;
+            this._ele = $j(Mustache.render(template, { name: this._config.name }));
+            var target = this._ele.find('.t-container');
 
-            ele.append(Mustache.render(template, { name: this._config.name }));
-
-            var target = ele.find('.t-container');
             for(var i = 0; i < this._items.length; i++)
                 this._items[i].render(target);
 
-            $j('.toolbar-element').draggable({ opacity: 0.8, helper: 'clone', revert: 'invalid' });
-            $j('.toolbox').selectable({ filter: '.toolbar-element' });
+            ele.append(this._ele);
+
+            $j('.toolbar-element').draggable({
+                opacity: 0.8,
+                helper: 'clone',
+                cursor: 'move',
+                revert: 'invalid' });
+            $j('.toolbox').selectable({ filter: 'div.toolbar-element' });
         }
     });
 

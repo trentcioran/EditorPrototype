@@ -9,7 +9,13 @@ define(['prototype'], function() {
         icon: 'http://placehold.it/260x180',
 
         initialize: function() {},
-        render: function() {}
+        render: function() {},
+        getWidgetConfig: function() {
+            return {
+                name: this.name,
+                icon: this.icon
+            };
+        }
     });
 
     return proto;

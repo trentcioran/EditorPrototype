@@ -17,10 +17,7 @@ define(['jquery', 'prototype', 'text!editor/core/toolbarWidget.html'], function(
 
             this._ele = ele;
 
-            ele.append(Mustache.render(template, {
-                name: this._component.name,
-                icon: this._component.icon
-            }));
+            ele.append(Mustache.render(template, this._component.getWidgetConfig()));
         }
     });
 

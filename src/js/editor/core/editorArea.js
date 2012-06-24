@@ -11,8 +11,14 @@ define(['jquery', 'prototype'], function($j) {
 
             ele.css({ height: '500px' })
                 .droppable({
+                    accept: 'div.toolbar-element',
+                    greedy: true,
+                    hoverClass: "ui-state-active",
+                    activeClass: 'ui-state-hover',
                     drop: function(evt, ui) {
                         console.log('element dropped...' + ui);
+
+                        $j( this ).addClass( "ui-state-highlight" );
                     }
                 });
         }

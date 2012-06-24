@@ -12,3 +12,24 @@
     min-height: 30px;
     line-height: 30px;
 }
+
+#editor-area {
+    border: 1px solid #a9a9a9;
+}
+.droppable-active {
+    border: 1px solid blue;
+    background-color: blue;
+}
+.ui-selected {
+    background: #F39814;
+    color: white;
+}
+
+.toolbar-element {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+.toolbox > div.t-container > div.title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
