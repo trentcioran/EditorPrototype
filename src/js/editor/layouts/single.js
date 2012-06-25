@@ -13,6 +13,7 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html']
         initialize: function ($super, widgets) {
             this._sortableContainment = '#editor-area';
             this._acceptDrop = 'div.toolbar-element';
+            this._dropableSelector = 'ul.editor-sortable';
 
             this.name = 'Single';
             this.metadata = {

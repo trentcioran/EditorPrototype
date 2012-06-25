@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="84eda97a-e9af-4638-a9d8-d766b3e9eed0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/elementProperties.js" afterPath="$PROJECT_DIR$/src/js/editor/core/elementProperties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/containerBase.js" afterPath="$PROJECT_DIR$/src/js/editor/core/containerBase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/layouts/single.html" afterPath="$PROJECT_DIR$/src/js/editor/layouts/single.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/layouts/single.js" afterPath="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/layouts/twoCol.html" afterPath="$PROJECT_DIR$/src/js/editor/layouts/twoCol.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/layouts/twoCol.js" afterPath="$PROJECT_DIR$/src/js/editor/layouts/twoCol.js" />
     </list>
     <ignored path="EditorPrototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,17 +28,97 @@
     <favorites_list name="EditorPrototype" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="elementProperties.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/editor/core/elementProperties.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="56" selection-start="762" selection-end="762" vertical-scroll-proportion="0.29667002">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="elementProperties.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/elementProperties.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="23" column="56" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="twoCol.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="32" column="38" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.5489405">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="single.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="39" column="48" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="editorArea.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="16" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="containerBase.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/containerBase.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="83" column="0" selection-start="2574" selection-end="2574" vertical-scroll-proportion="0.39455095">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="single.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="39" selection-start="277" selection-end="277" vertical-scroll-proportion="-1.9615384">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="twoCol.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="8" column="23" selection-start="547" selection-end="563" vertical-scroll-proportion="-5.230769">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="editorItem.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorItem.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="20" column="41" selection-start="960" selection-end="960" vertical-scroll-proportion="-13.076923">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="editorArea.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="11" selection-start="11" selection-end="26" vertical-scroll-proportion="-0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -54,22 +138,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/js/editor/core/editorArea.html" />
         <option value="$PROJECT_DIR$/src/js/editor/pods/base.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/mainLayout.html" />
-        <option value="$PROJECT_DIR$/src/js/editor/layouts/single.html" />
         <option value="$PROJECT_DIR$/src/js/editor/layouts/base.js" />
-        <option value="$PROJECT_DIR$/src/js/editor/layouts/twoCol.html" />
-        <option value="$PROJECT_DIR$/src/js/editor/layouts/twoCol.js" />
-        <option value="$PROJECT_DIR$/src/js/editor/core/containerBase.js" />
         <option value="$PROJECT_DIR$/src/js/editor/pods/text.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/editorItem.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/editorItem.html" />
-        <option value="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/widgetBase.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/elementProperties.html" />
         <option value="$PROJECT_DIR$/src/style/editor.css" />
         <option value="$PROJECT_DIR$/src/js/editor/core/elementProperties.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/layouts/twoCol.html" />
+        <option value="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/layouts/single.html" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/editorArea.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/layouts/twoCol.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/containerBase.js" />
       </list>
     </option>
   </component>
@@ -391,17 +475,22 @@
       <created>1340606428167</created>
       <updated>1340606428167</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix properties dialog position">
+      <created>1340645025310</created>
+      <updated>1340645025310</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1176" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991803" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297244" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16130732" sideWeight="0.670082" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16130732" sideWeight="0.67027557" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -412,7 +501,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991803" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -455,7 +543,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- live update for properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix properties dialog position" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -479,24 +567,15 @@
     <MESSAGE value="- text pod droppable onto layout&#10;- two col layout" />
     <MESSAGE value="- remove placeholder text on drop" />
     <MESSAGE value="- live update for properties" />
+    <MESSAGE value="fix properties dialog position" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="27" selection-start="592" selection-end="592" vertical-scroll-proportion="0.3220859" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/containerBase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="43" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/pods/text.js">
@@ -509,39 +588,9 @@
         <state line="77" column="59" selection-start="2472" selection-end="2472" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorItem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="41" selection-start="960" selection-end="960" vertical-scroll-proportion="0.35714287" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="358" selection-end="358" vertical-scroll-proportion="0.08928572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="20" selection-start="1531" selection-end="1535" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="946" selection-end="946" vertical-scroll-proportion="0.38244197" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/core/widgetBase.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="-1.9615384" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/core/elementProperties.html">
@@ -563,9 +612,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorItem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="960" selection-end="960" vertical-scroll-proportion="-13.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="26" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="39" selection-start="277" selection-end="277" vertical-scroll-proportion="-1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="48" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="547" selection-end="563" vertical-scroll-proportion="-5.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/core/elementProperties.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="56" selection-start="762" selection-end="762" vertical-scroll-proportion="0.29667002">
+        <state line="23" column="56" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="38" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.5489405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/containerBase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="2574" selection-end="2574" vertical-scroll-proportion="0.39455095">
           <folding />
         </state>
       </provider>

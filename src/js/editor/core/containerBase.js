@@ -21,6 +21,8 @@ define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
 
             _connectedWith: '.connectedSortable',
 
+            _dropableSelector: null,
+
             _acceptDrop: null,
 
             initialize: function(widgets) {
@@ -54,14 +56,19 @@ define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
                 }).disableSelection();
 
                 // drop behavior
-                ele.droppable({
+                var droppable = ele;
+                if (this._dropableSelector) {
+                    droppable = ele.find(this._dropableSelector);
+                }
+                droppable.droppable({
                     accept: me._acceptDrop,
                     greedy: true,
                     hoverClass: "droppable-active",
                     drop: function(evt, ui) {
+                        var target = $j(this);
                         console.log('element dropped: ' + ui.draggable.data('widget-name'));
                         me.onBeforeProcessDrop();
-                        me._processDrop(ui);
+                        me._processDrop(ui, target);
                     }
                 });
             },
@@ -70,15 +77,19 @@ define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
                 $j('#topSpace').block({ message: null });
             },
 
-            getContentElement: function() {
-                return this._targetAppend;
+            getContentElement: function(target) {
+                if(target.find('ul').length != 0) {
+                    return target.find('ul');
+                }
+
+                return target;
             },
 
             onBeforeProcessDrop: function() {
                 $j(this._targetAppend).find('ul.connectedSortable > span').detach();
             },
 
-            _processDrop: function (ui) {
+            _processDrop: function (ui, target) {
                 var draggable = ui.draggable.data('widget-name');
                 var thePrototype = this._getPrototype(draggable);
                 var instance = new thePrototype(this._widgets);
@@ -88,7 +99,7 @@ define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
                 decorator.delete($j.proxy(this._removeInstance, this));
 
                 this._items[id] = decorator;
-                decorator.render(this.getContentElement());
+                decorator.render(this.getContentElement(target));
             },
 
             _processStopSorting: function(ui) {
