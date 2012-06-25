@@ -29,7 +29,7 @@ define(['jquery', 'pods/base', 'knockout', 'ckeditor'], function($j, Pod, ko) {
             this._id = 'textPod_' + counter++;
 
             // container element
-            this._ele = $j('<textarea cols="80" id="' + this._id + '" name="' + this._id + '" rows="7"></textarea>');
+            this._ele = $j('<textarea cols="80" id="' + this._id + '" name="' + this._id + '" rows="5"></textarea>');
             ele.append(this._ele);
 
             $super(ele);

@@ -46,6 +46,7 @@ define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
                     containment: me._sortableContainment,
                     start: function(evt, ui) {
                         var x = ui;
+                        evt.stopPropagation();
                     },
                     stop: function(evt, ui) {
                         var x = ui;
@@ -59,6 +60,7 @@ define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
                     hoverClass: "droppable-active",
                     drop: function(evt, ui) {
                         console.log('element dropped: ' + ui.draggable.data('widget-name'));
+                        me.onBeforeProcessDrop();
                         me._processDrop(ui);
                     }
                 });
@@ -70,6 +72,10 @@ define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
 
             getContentElement: function() {
                 return this._targetAppend;
+            },
+
+            onBeforeProcessDrop: function() {
+                $j(this._targetAppend).find('ul.connectedSortable > span').detach();
             },
 
             _processDrop: function (ui) {

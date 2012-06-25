@@ -44,6 +44,10 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html']
 
             ko.applyBindings(this.metadata, this._ele[0])
             console.log('[' + this.name + '] rendered.');
+        },
+
+        onBeforeProcessDrop: function() {
+            $j(this._ele).find('ul.connectedSortable > span').detach();
         }
     });
 

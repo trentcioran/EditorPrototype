@@ -23,6 +23,7 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/twoCol.html']
 
             $super(widgets);
         },
+
         render: function($super, ele) {
             console.log('rendering [' + this.name + '] to element: ' + ele);
             var me = this;
@@ -42,6 +43,10 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/twoCol.html']
 
             ko.applyBindings(this.metadata, this._ele[0])
             console.log('[' + this.name + '] rendered.');
+        },
+
+        onBeforeProcessDrop: function() {
+            $j(this._ele).find('ul.connectedSortable > span').detach();
         }
     });
 
