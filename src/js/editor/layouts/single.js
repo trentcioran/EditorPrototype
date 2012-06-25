@@ -13,19 +13,23 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html']
 
         metadata: {},
 
-        initialize: function () {
+        initialize: function ($super) {
+            this._sortableContainment = '#editor-area';
+            this._acceptDrop = 'div.toolbar-element';
+
             this.name = 'Single';
             this.metadata = {
                 'bgColor': ko.observable('white'),
-                    'border': ko.observable('1px solid gray'),
+                    'border': ko.observable('1px solid lightGrey'),
                     'width': ko.observable('100%'),
                     'height': ko.observable('100px')
             };
         },
 
-        render: function(ele) {
+        render: function($super, ele) {
             console.log('rendering [' + this.name + '] to element: ' + ele);
             var me = this;
+            $super(ele);
 
             this._ele = $j(template);
 

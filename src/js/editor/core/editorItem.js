@@ -22,11 +22,11 @@ define(['jquery', 'prototype', 'text!editor/core/editorItem.html', 'core/element
             console.log('rendering editor element for [' + this._component.name + ']');
 
             this._ele = $j(Mustache.render(template, { id: this._id }));
+            ele.append(this._ele);
 
             // render the control
             var target = this._ele.find('.element-content');
             this._component.render(target);
-            ele.append(this._ele);
 
             this._wireEvents();
             console.log('editor element for [' + this._component.name + '] rendered.');
@@ -58,6 +58,7 @@ define(['jquery', 'prototype', 'text!editor/core/editorItem.html', 'core/element
                     return;
                 }
 
+                me._component.destroy();
                 ele.detach();
             });
 

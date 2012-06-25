@@ -10,7 +10,7 @@ define(['jquery', 'knockout-mapping', 'prototype'], function($j, kom) {
         metadata: {},
 
         initialize: function() {
-            this.metadata = ko.mapping.fromJS(this.metadata);
+            this.metadata = kom.fromJS(this.metadata);
         },
 
         render: function() {},
@@ -24,6 +24,10 @@ define(['jquery', 'knockout-mapping', 'prototype'], function($j, kom) {
 
         setProperty: function(property, value) {
             this.metadata[property](value);
+        },
+
+        destroy: function() {
+            this._ele.detach();
         }
     });
 

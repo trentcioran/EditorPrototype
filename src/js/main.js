@@ -25,7 +25,7 @@ require.config({
         'knockout': 'dependency/knockout/knockout',
         'knockout-mapping': 'dependency/knockout/knockout.mapping',
         'mustache': 'dependency/mustache/mustache',
-        'ckeditor': 'dependency/ckeditor/ckeditor'
+        'ckeditor': 'dependency/ckeditor/ckeditor_basic'
     },
     shim: {
         'jquery': {
