@@ -13,7 +13,7 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html']
         initialize: function ($super, widgets) {
             this._sortableContainment = '#editor-area';
             this._acceptDrop = 'div.toolbar-element';
-            this._dropableSelector = 'ul.editor-sortable';
+            this._dropableSelector = 'td.l-container';
 
             this.name = 'Single';
             this.metadata = {
@@ -29,7 +29,6 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html']
         render: function($super, ele) {
             console.log('rendering [' + this.name + '] to element: ' + ele);
             var me = this;
-            $super(ele);
 
             this._ele = $j(template);
             this._targetAppend = this._ele.find('.l-container > ul');
@@ -44,6 +43,8 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html']
             ele.append(this._ele);
 
             ko.applyBindings(this.metadata, this._ele[0])
+
+            $super(ele);
             console.log('[' + this.name + '] rendered.');
         },
 

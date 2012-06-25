@@ -79,7 +79,7 @@ define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
 
             getContentElement: function(target) {
                 if(target.find('ul').length != 0) {
-                    return target.find('ul');
+                    return target.children('ul').first();
                 }
 
                 return target;

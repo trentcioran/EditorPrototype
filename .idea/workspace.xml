@@ -4,10 +4,7 @@
     <list default="true" id="84eda97a-e9af-4638-a9d8-d766b3e9eed0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/containerBase.js" afterPath="$PROJECT_DIR$/src/js/editor/core/containerBase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/layouts/single.html" afterPath="$PROJECT_DIR$/src/js/editor/layouts/single.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/layouts/single.js" afterPath="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/layouts/twoCol.html" afterPath="$PROJECT_DIR$/src/js/editor/layouts/twoCol.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/layouts/twoCol.js" afterPath="$PROJECT_DIR$/src/js/editor/layouts/twoCol.js" />
     </list>
     <ignored path="EditorPrototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,19 +37,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="twoCol.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="twoCol.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="38" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.5489405">
+                <state line="12" column="29" selection-start="391" selection-end="446" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="single.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="single.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="48" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
+                <state line="47" column="0" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.6569122">
                   <folding />
                 </state>
               </provider>
@@ -71,19 +68,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="containerBase.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="containerBase.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/js/editor/core/containerBase.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="83" column="0" selection-start="2574" selection-end="2574" vertical-scroll-proportion="0.39455095">
+                <state line="80" column="36" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="single.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="single.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="39" selection-start="277" selection-end="277" vertical-scroll-proportion="-1.9615384">
+                <state line="3" column="39" selection-start="277" selection-end="277" vertical-scroll-proportion="0.05357143">
                   <folding />
                 </state>
               </provider>
@@ -93,15 +90,6 @@
             <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="8" column="23" selection-start="547" selection-end="563" vertical-scroll-proportion="-5.230769">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="editorItem.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorItem.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="41" selection-start="960" selection-end="960" vertical-scroll-proportion="-13.076923">
                   <folding />
                 </state>
               </provider>
@@ -149,11 +137,11 @@
         <option value="$PROJECT_DIR$/src/style/editor.css" />
         <option value="$PROJECT_DIR$/src/js/editor/core/elementProperties.js" />
         <option value="$PROJECT_DIR$/src/js/editor/layouts/twoCol.html" />
-        <option value="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
         <option value="$PROJECT_DIR$/src/js/editor/layouts/single.html" />
         <option value="$PROJECT_DIR$/src/js/editor/core/editorArea.js" />
         <option value="$PROJECT_DIR$/src/js/editor/layouts/twoCol.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/containerBase.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
       </list>
     </option>
   </component>
@@ -479,7 +467,11 @@
       <created>1340645025310</created>
       <updated>1340645025310</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="- fix drop on two column layout">
+      <created>1340652738853</created>
+      <updated>1340652738853</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -543,7 +535,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix properties dialog position" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fix drop on two column layout" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -568,6 +560,7 @@
     <MESSAGE value="- remove placeholder text on drop" />
     <MESSAGE value="- live update for properties" />
     <MESSAGE value="fix properties dialog position" />
+    <MESSAGE value="- fix drop on two column layout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -612,44 +605,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorItem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="41" selection-start="960" selection-end="960" vertical-scroll-proportion="-13.076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="11" selection-end="26" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="277" selection-end="277" vertical-scroll-proportion="-1.9615384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="48" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="547" selection-end="563" vertical-scroll-proportion="-5.230769">
           <folding />
         </state>
       </provider>
@@ -661,16 +619,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.js">
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorItem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="38" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.5489405">
+        <state line="20" column="41" selection-start="960" selection-end="960" vertical-scroll-proportion="0.35714287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="547" selection-end="563" vertical-scroll-proportion="-5.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="26" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/core/containerBase.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="2574" selection-end="2574" vertical-scroll-proportion="0.39455095">
+        <state line="80" column="36" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/twoCol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="29" selection-start="391" selection-end="446" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="39" selection-start="277" selection-end="277" vertical-scroll-proportion="0.05357143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.6569122">
           <folding />
         </state>
       </provider>
