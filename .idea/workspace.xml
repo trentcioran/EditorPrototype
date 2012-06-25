@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="84eda97a-e9af-4638-a9d8-d766b3e9eed0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/containerBase.js" afterPath="$PROJECT_DIR$/src/js/editor/core/containerBase.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/layouts/single.js" afterPath="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/main.js" afterPath="$PROJECT_DIR$/src/js/editor/core/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/mainLayout.html" afterPath="$PROJECT_DIR$/src/js/editor/core/mainLayout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/pods/image.js" afterPath="$PROJECT_DIR$/src/js/editor/pods/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/pods/main.js" afterPath="$PROJECT_DIR$/src/js/editor/pods/main.js" />
     </list>
     <ignored path="EditorPrototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,10 +48,37 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="single.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="single.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="47" column="0" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.6569122">
+                <state line="45" column="0" selection-start="1324" selection-end="1382" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="text.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/pods/text.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="16" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="image.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/pods/image.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="16" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="30" column="49" selection-start="905" selection-end="905" vertical-scroll-proportion="0.27951565">
                   <folding />
                 </state>
               </provider>
@@ -77,10 +106,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="single.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="single.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="39" selection-start="277" selection-end="277" vertical-scroll-proportion="0.05357143">
+                <state line="9" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="-5.8846154">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mainLayout.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/js/editor/core/mainLayout.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="21" selection-start="113" selection-end="113" vertical-scroll-proportion="0.071428575">
                   <folding />
                 </state>
               </provider>
@@ -126,10 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/js/editor/pods/base.js" />
-        <option value="$PROJECT_DIR$/src/js/editor/core/mainLayout.html" />
-        <option value="$PROJECT_DIR$/src/js/editor/layouts/base.js" />
-        <option value="$PROJECT_DIR$/src/js/editor/pods/text.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/editorItem.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/editorItem.html" />
         <option value="$PROJECT_DIR$/src/js/editor/core/widgetBase.js" />
@@ -142,6 +176,10 @@
         <option value="$PROJECT_DIR$/src/js/editor/layouts/twoCol.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/containerBase.js" />
         <option value="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/pods/main.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/pods/image.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/main.js" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/mainLayout.html" />
       </list>
     </option>
   </component>
@@ -471,7 +509,11 @@
       <created>1340652738853</created>
       <updated>1340652738853</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="- fix drop on two column layout">
+      <created>1340653552428</created>
+      <updated>1340653552428</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -566,38 +608,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/pods/text.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="35" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="59" selection-start="2472" selection-end="2472" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/widgetBase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/elementProperties.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="616" selection-end="616" vertical-scroll-proportion="-10.461538" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/editor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.6861756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="18" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.29667002">
@@ -654,16 +664,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.html">
+    <entry file="file://$PROJECT_DIR$/src/js/editor/pods/text.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="277" selection-end="277" vertical-scroll-proportion="0.05357143">
+        <state line="16" column="0" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.6569122">
+        <state line="45" column="0" selection-start="1324" selection-end="1382" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/pods/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="53" selection-start="211" selection-end="211" vertical-scroll-proportion="0.120080724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/layouts/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/pods/image.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/topToolbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="0.052523173">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="49" selection-start="905" selection-end="905" vertical-scroll-proportion="0.27951565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/mainLayout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="21" selection-start="113" selection-end="113" vertical-scroll-proportion="0.071428575">
           <folding />
         </state>
       </provider>

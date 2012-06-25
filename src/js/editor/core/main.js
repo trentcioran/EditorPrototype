@@ -25,6 +25,17 @@ define(['jquery', 'prototype', 'text!editor/core/mainLayout.html',
             $j('#preview-modal').modal('show');
         });
 
+        var toolsVisible =true;
+        $j('#hideToolsBtn').click(function() {
+            if (toolsVisible) {
+                $j('.handler,.ui-resizable-handle').hide();
+                toolsVisible = false;
+            } else {
+                $j('.handler,.ui-resizable-handle').show();
+                toolsVisible = true;
+            }
+        });
+
         // save functions
         $j('#saveBtn').click(function() {
             console.log('saving newsletter...');
