@@ -25,11 +25,13 @@ define(['jquery', 'pods/base', 'knockout', 'ckeditor'], function($j, Pod, ko) {
         render: function($super, ele) {
             this._id = 'textPod_' + counter++;
 
+            // container element
             this._ele = $j('<textarea cols="80" id="' + this._id + '" name="' + this._id + '" rows="7"></textarea>');
             ele.append(this._ele);
 
             $super(ele);
 
+            /* create wysiwyg editor */
             this._editor = CKEDITOR.replace(this._id,
             {
                 uiColor : '#FFFFFF',
