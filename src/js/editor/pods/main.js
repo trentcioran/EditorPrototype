@@ -5,6 +5,6 @@ define(['pods/text', 'pods/image'], function(TextPodDefinition, ImagePodDefiniti
 
     return {
         name: 'Pods',
-        items: [TextPodDefinition, ImagePodDefinition]
+        items: [TextPodDefinition]
     };
 });

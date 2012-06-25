@@ -2,7 +2,8 @@
  @class Represents a single layout
  @extends Layout
  */
-define(['jquery', 'layouts/base'], function($j, Layout) {
+define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html'],
+    function($j, ko, Layout, template) {
 
     /**
      @class Single Layout Widget definition
@@ -10,26 +11,35 @@ define(['jquery', 'layouts/base'], function($j, Layout) {
     var proto = Class.create(Layout, {
         _ele: null,
 
-        metadata: {
-            'background-color': 'white',
-            'border': '1px solid gray',
-            'width': '100%',
-            'height': '100px'
-        },
+        metadata: {},
 
         initialize: function () {
             this.name = 'Single';
+            this.metadata = {
+                'bgColor': ko.observable('white'),
+                    'border': ko.observable('1px solid gray'),
+                    'width': ko.observable('100%'),
+                    'height': ko.observable('100px')
+            };
         },
 
         render: function(ele) {
             console.log('rendering [' + this.name + '] to element: ' + ele);
+            var me = this;
 
-            this._ele = $j('<table><tr><td class="l-container"><span>Drop here an element!</span></td></tr></table>')
-                .css(this.metadata);
+            this._ele = $j(template);
+
+            // resizing behavior
+            this._ele.resizable({
+                stop: function() {
+                    me.metadata.height(me._ele.height() + 'px');
+                }
+            });
 
             ele.append(this._ele);
 
-            console.log('[' + this.name + '] redered.');
+            ko.applyBindings(this.metadata, this._ele[0])
+            console.log('[' + this.name + '] rendered.');
         }
     });
 
@@ -38,7 +48,7 @@ define(['jquery', 'layouts/base'], function($j, Layout) {
         icon: 'http://placehold.it/260x180',
         /* Popover element data */
         title: 'Single Layout',
-        content: 'Use this layout when you want to spread all over the width of your newsletter',
+        content: 'Use this layout when you want to spread all over the width of your design',
         prototype: proto
     };
 });

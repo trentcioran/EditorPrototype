@@ -2,13 +2,29 @@
  @class WidgetBase, base component for all system widgets, provides a common contract
  to facilitate handling by toolbar and drag/drop functionalities
  */
-define(['prototype'], function() {
+define(['jquery', 'knockout-mapping', 'prototype'], function($j, kom) {
 
     var proto = Class.create({
+        name: '',
 
-        initialize: function() {},
+        metadata: {},
 
-        render: function() {}
+        initialize: function() {
+            this.metadata = ko.mapping.fromJS(this.metadata);
+        },
+
+        render: function() {},
+
+        getCurrentState: function() {
+            return kom.toJS(this.metadata);
+        },
+
+        setCurrentState: function(newState) {
+        },
+
+        setProperty: function(property, value) {
+            this.metadata[property](value);
+        }
     });
 
     return proto;

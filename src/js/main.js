@@ -23,6 +23,7 @@ require.config({
         'bootstrap': 'dependency/bootstrap/bootstrap',
         'prototype': 'dependency/prototype/prototype',
         'knockout': 'dependency/knockout/knockout',
+        'knockout-mapping': 'dependency/knockout/knockout.mapping',
         'mustache': 'dependency/mustache/mustache',
         'ckeditor': 'dependency/ckeditor/ckeditor'
     },
@@ -44,6 +45,10 @@ require.config({
         /* MVVM SSUPPORT */
         'knockout': {
             exports: 'ko'
+        },
+        'knockout-mapping': {
+            deps: ['knockout'],
+            exports: 'kom'
         },
         /* TEMPLATING ENGINE */
         'mustache': {

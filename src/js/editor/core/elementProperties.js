@@ -1,8 +1,8 @@
 /**
  @class Renders and allows manipulation of a widget's properties
  */
-define(['jquery', 'prototype', 'text!editor/core/elementProperties.html'],
-    function($j, $, template) {
+define(['jquery', 'knockout', 'prototype', 'text!editor/core/elementProperties.html'],
+    function($j, ko, $, template) {
 
     return Class.create({
         _component: null,
@@ -11,12 +11,22 @@ define(['jquery', 'prototype', 'text!editor/core/elementProperties.html'],
 
         initialize: function(component) {
             this._component = component;
-            this._originalState = this._currentState = component.getState();
+            this._originalState = this._currentState = component.getCurrentState();
         },
 
         render: function(ele) {
             var me = this;
-            this._ele = $j(Mustache.render(template, this._component.metadata));
+
+            var data = [];
+            for(var prop in this._currentState) {
+                this._currentState[prop] = ko.observable(this._currentState[prop])
+                data.push({
+                    name: prop,
+                    value: this._currentState[prop]
+                });
+            }
+
+            this._ele = $j(template);
 
             this._ele.find('.btn-primary').click(function() {
                 me._ele.modal('hide');
@@ -27,6 +37,8 @@ define(['jquery', 'prototype', 'text!editor/core/elementProperties.html'],
                     me._ele.detach();
                 });
             ele.append(this._ele);
+
+            ko.applyBindings({ properties: data }, this._ele[0])
         }
     });
 });

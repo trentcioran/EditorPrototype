@@ -28,7 +28,8 @@ define(['jquery', 'prototype', 'text!editor/core/editorArea.html', 'core/editorI
             this._targetAppend = ele.find('ul');
             this._targetAppend.sortable({
                 placeholder: 'ui-state-highlight',
-                handle: 'a.drag-handler'
+                handle: 'a.drag-handler',
+                containment: '#editor-area'
             }).disableSelection();
 
             // drop behavior
