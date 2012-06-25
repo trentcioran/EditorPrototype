@@ -10,7 +10,7 @@ define(['jquery', 'knockout-mapping', 'prototype'], function($j, kom, $j) {
         metadata: {},
 
         initialize: function() {
-            this.metadata = kom.fromJS(this.metadata);
+            //this.metadata = kom.fromJS(this.metadata);
         },
 
         render: function() {},
@@ -21,7 +21,7 @@ define(['jquery', 'knockout-mapping', 'prototype'], function($j, kom, $j) {
          @return the widget metadata
          */
         getCurrentState: function() {
-            return kom.toJS(this.metadata);
+            return this.metadata;
         },
 
         /**
@@ -48,6 +48,10 @@ define(['jquery', 'knockout-mapping', 'prototype'], function($j, kom, $j) {
          */
         destroy: function() {
             this._ele.detach();
+        },
+
+        onStopSorting: function() {
+
         }
     });
 

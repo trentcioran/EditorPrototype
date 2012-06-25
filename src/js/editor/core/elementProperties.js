@@ -1,8 +1,8 @@
 /**
  @class Renders and allows manipulation of a widget's properties
  */
-define(['jquery', 'knockout', 'prototype', 'text!editor/core/elementProperties.html'],
-    function($j, ko, $, template) {
+define(['jquery', 'knockout', 'knockout-mapping', 'prototype', 'text!editor/core/elementProperties.html'],
+    function($j, ko, kom, $, template) {
 
     return Class.create({
         _component: null,
@@ -11,34 +11,49 @@ define(['jquery', 'knockout', 'prototype', 'text!editor/core/elementProperties.h
 
         initialize: function(component) {
             this._component = component;
-            this._originalState = this._currentState = component.getCurrentState();
+            var meta = component.getCurrentState();
+
+            this._currentState = this.getAsArray(meta, true);
+            this._originalState = this.getAsArray(meta, false);
         },
 
         render: function(ele) {
             var me = this;
+            this._ele = $j(template);
 
+            this._ele.find('.cancel').click(function() {
+                for(var i = 0; i < me._originalState.length; i++) {
+                    var prop = me._originalState[i];
+                    me._component.setProperty(prop.name, prop.value);
+                }
+                me._ele.modal('hide');
+            });
+            ele.append(this._ele);
+
+            ko.applyBindings({ properties: me._currentState }, this._ele[0])
+
+            // auto remove modal
+            this._ele.modal().on('hidden', function() {
+                me._ele.detach();
+            });
+        },
+
+        getAsArray: function(metadata, observables) {
             var data = [];
-            for(var prop in this._currentState) {
-                this._currentState[prop] = ko.observable(this._currentState[prop])
+            for(var prop in metadata) {
+                var value;
+                if (observables) {
+                    value = metadata[prop];
+                } else {
+                    value = metadata[prop]();
+                }
                 data.push({
                     name: prop,
-                    value: this._currentState[prop]
+                    value: value
                 });
             }
 
-            this._ele = $j(template);
-
-            this._ele.find('.btn-primary').click(function() {
-                me._ele.modal('hide');
-            });
-
-            this._ele.modal()
-                .on('hidden', function() {
-                    me._ele.detach();
-                });
-            ele.append(this._ele);
-
-            ko.applyBindings({ properties: data }, this._ele[0])
+            return data;
         }
     });
 });

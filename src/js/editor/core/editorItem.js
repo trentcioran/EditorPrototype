@@ -46,6 +46,10 @@ define(['jquery', 'prototype', 'text!editor/core/editorItem.html', 'core/element
             this._events['move'] = listener;
         },
 
+        onStopSorting: function() {
+            this._component.onStopSorting();
+        },
+
         _wireEvents: function() {
             var me = this, ele = this._ele;
 
@@ -72,7 +76,7 @@ define(['jquery', 'prototype', 'text!editor/core/editorItem.html', 'core/element
 
             ele.find('.properties-handler').click(function() {
                 var dialog = new PropertiesDialog(me._component);
-                dialog.render(ele);
+                dialog.render($j(document));
             });
         }
     });

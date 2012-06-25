@@ -17,9 +17,9 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html']
             this.name = 'Single';
             this.metadata = {
                 'bgColor': ko.observable('white'),
-                    'border': ko.observable('1px solid lightGrey'),
-                    'width': ko.observable('100%'),
-                    'height': ko.observable('100px')
+                'border': ko.observable('1px solid lightGrey'),
+                'width': ko.observable('100%'),
+                'height': ko.observable('100px')
             };
 
             $super(widgets);

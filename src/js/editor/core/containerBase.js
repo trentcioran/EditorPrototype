@@ -49,7 +49,7 @@ define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
                         evt.stopPropagation();
                     },
                     stop: function(evt, ui) {
-                        var x = ui;
+                        me._processStopSorting(ui);
                     }
                 }).disableSelection();
 
@@ -89,6 +89,13 @@ define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
 
                 this._items[id] = decorator;
                 decorator.render(this.getContentElement());
+            },
+
+            _processStopSorting: function(ui) {
+                var id = $j(ui.item).attr('id').replace('editorItem-', '');
+                var item = this._items[id];
+
+                item.onStopSorting();
             },
 
             _getPrototype: function(widgetName) {
