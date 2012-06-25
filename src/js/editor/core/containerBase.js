@@ -1,12 +1,12 @@
 /**
  @class Abstract Container, widgets can be dropped into this component
  */
-define(['jquery', 'prototype', 'core/editorItem'],
-    function($j, $, EditorItem) {
+define(['jquery', 'prototype', 'core/editorItem', 'core/widgetBase'],
+    function($j, $, EditorItem, Widget) {
 
         window.__editorAreaItemId = 1;
 
-        var proto = Class.create({
+        var proto = Class.create(Widget, {
             _ele: null,
 
             _targetAppend: null,
@@ -18,6 +18,8 @@ define(['jquery', 'prototype', 'core/editorItem'],
             _items: null,
 
             _sortableContainment: null,
+
+            _connectedWith: '.connectedSortable',
 
             _acceptDrop: null,
 
@@ -36,10 +38,18 @@ define(['jquery', 'prototype', 'core/editorItem'],
 
                 // sortable behavior
                 this._targetAppend = ele.find('ul');
+
                 this._targetAppend.sortable({
                     placeholder: 'ui-state-highlight',
                     handle: 'a.drag-handler',
-                    containment: me._sortableContainment
+                    connectedWith: me._connectedWith,
+                    containment: me._sortableContainment,
+                    start: function(evt, ui) {
+                        var x = ui;
+                    },
+                    stop: function(evt, ui) {
+                        var x = ui;
+                    }
                 }).disableSelection();
 
                 // drop behavior
@@ -54,6 +64,14 @@ define(['jquery', 'prototype', 'core/editorItem'],
                 });
             },
 
+            activate: function() {
+                $j('#topSpace').block({ message: null });
+            },
+
+            getContentElement: function() {
+                return this._targetAppend;
+            },
+
             _processDrop: function (ui) {
                 var draggable = ui.draggable.data('widget-name');
                 var thePrototype = this._getPrototype(draggable);
@@ -64,7 +82,7 @@ define(['jquery', 'prototype', 'core/editorItem'],
                 decorator.delete($j.proxy(this._removeInstance, this));
 
                 this._items[id] = decorator;
-                decorator.render(this._targetAppend);
+                decorator.render(this.getContentElement());
             },
 
             _getPrototype: function(widgetName) {

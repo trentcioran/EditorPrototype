@@ -3,8 +3,8 @@
  Responsible for loading all editor components
  */
 define(['jquery', 'prototype', 'text!editor/core/mainLayout.html',
-    'core/toolbar', 'core/topToolbar', 'core/editorArea', 'layouts', 'pods'],
-    function($j, $, template, Toolbar, TopToolbar, Editor, layouts, pods){
+    'core/toolbar', 'core/editorArea', 'layouts', 'pods'],
+    function($j, $, template, Toolbar, Editor, layouts, pods){
 
     var _toolbarArea;
     var _widgetToolbar;
@@ -15,7 +15,6 @@ define(['jquery', 'prototype', 'text!editor/core/mainLayout.html',
 
     var layoutTbar = new Toolbar(layouts);
     var podTbar = new Toolbar(pods);
-    var topTbar = new TopToolbar();
     var editor = new Editor(allWidgets);
 
     var wireEvents = function() {
@@ -60,7 +59,7 @@ define(['jquery', 'prototype', 'text!editor/core/mainLayout.html',
         initialize: function (ele) {
             console.log('Initializing editor.');
 
-            ele.append(template)
+            ele.append(template);
 
             _toolbarArea = $j('#toolbox-area');
             _widgetToolbar = $j('#widget-toolbar');
@@ -68,7 +67,6 @@ define(['jquery', 'prototype', 'text!editor/core/mainLayout.html',
 
             layoutTbar.render(_toolbarArea);
             podTbar.render(_toolbarArea);
-            topTbar.render(_widgetToolbar);
             editor.render(_editorArea);
 
             wireEvents();

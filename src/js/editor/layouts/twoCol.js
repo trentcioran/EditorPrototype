@@ -2,29 +2,45 @@
  @class Represents a two column layout
  @extends Layout
  */
-define(['jquery', 'layouts/base'], function($j, Layout) {
+define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/twoCol.html'],
+    function($j, ko, Layout, template) {
 
-    var proto = Class.create(Layout, {
-        _ele: null,
+        var proto = Class.create(Layout, {
 
-        metadata: {
-            'background-color': 'white',
-            'border': '1px solid gray',
-            'width': '100%',
-            'height': '100px'
-        },
+        initialize: function ($super, widgets) {
+            this._sortableContainment = '#editor-area';
+            this._acceptDrop = 'div.toolbar-element';
 
-        initialize: function () {
             this.name = 'Two';
-        },
-        render: function(ele) {
-            console.log('rendering [' + this.name + '] to element: ' + ele);
+            this.metadata = {
+                'bgColor': ko.observable('white'),
+                'border': ko.observable('1px solid lightGrey'),
+                'width': ko.observable('100%'),
+                'widthCol1': ko.observable('50%'),
+                'widthCol2': ko.observable('50%'),
+                'height': ko.observable('100px')
+            };
 
-            this._ele = $j('<table><tr><td class="l-container"><span>Drop here an element!</span></td><td class="l-container"><span>Drop here an element!</span></td></tr></table>')
-                .css(this.metadata);
+            $super(widgets);
+        },
+        render: function($super, ele) {
+            console.log('rendering [' + this.name + '] to element: ' + ele);
+            var me = this;
+            $super(ele);
+
+            this._ele = $j(template);
+            this._targetAppend = this._ele.find('.l-container > ul');
+
+            // resizing behavior
+            this._ele.resizable({
+                stop: function() {
+                    me.metadata.height(me._ele.height() + 'px');
+                }
+            });
 
             ele.append(this._ele);
 
+            ko.applyBindings(this.metadata, this._ele[0])
             console.log('[' + this.name + '] rendered.');
         }
     });

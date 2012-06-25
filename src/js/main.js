@@ -20,18 +20,21 @@ require.config({
     paths: {
         'jquery': 'dependency/jquery/jquery',
         'jqueryui': 'dependency/jquery/jqueryui',
+        'jqblock': 'dependency/jquery/jquery.blockUI',
         'bootstrap': 'dependency/bootstrap/bootstrap',
         'prototype': 'dependency/prototype/prototype',
         'knockout': 'dependency/knockout/knockout',
         'knockout-mapping': 'dependency/knockout/knockout.mapping',
         'mustache': 'dependency/mustache/mustache',
-        'ckeditor': 'dependency/ckeditor/ckeditor_basic'
+        'ckeditor': 'dependency/ckeditor/ckeditor_basic',
+        'ckeditor-jquery': 'dependency/ckeditor/adapters/jquery'
     },
     shim: {
         'jquery': {
             exports: 'jQuery'
         },
         'jqueryui': ['jquery'],
+        'jqblock': ['jquery'],
         /* UI COMPONENTS, BASE STYLES AND LAYOUT */
         'bootstrap': {
             deps: ['jquery'],
@@ -56,6 +59,9 @@ require.config({
         },
         'ckeditor': {
             exports: 'CKEDITOR'
+        },
+        'ckeditor-jquery': {
+            exports: 'ck'
         }
     }
 });

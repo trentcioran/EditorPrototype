@@ -1,7 +1,7 @@
 /**
  @class EditorArea, takes care of the workable area of the editor
  */
-define(['jquery', 'prototype', 'text!editor/core/editorArea.html', 'core/containerBase'],
+define(['jquery', 'prototype', 'text!editor/core/editorArea.html', 'core/containerBase', 'jqblock'],
     function($j, $, template, Container) {
 
     window.__editorAreaItemId = 1;
@@ -43,6 +43,9 @@ define(['jquery', 'prototype', 'text!editor/core/editorArea.html', 'core/contain
             // remove what we don't want for the moment
             $j('#_placeholder').detach();
             $j('#ck__placeholder').detach();
+
+            // block toolbar
+            $j('#topSpace').block({ message: null });
         }
     });
 

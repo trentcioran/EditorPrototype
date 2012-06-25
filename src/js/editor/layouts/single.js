@@ -9,11 +9,8 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html']
      @class Single Layout Widget definition
      */
     var proto = Class.create(Layout, {
-        _ele: null,
 
-        metadata: {},
-
-        initialize: function ($super) {
+        initialize: function ($super, widgets) {
             this._sortableContainment = '#editor-area';
             this._acceptDrop = 'div.toolbar-element';
 
@@ -24,6 +21,8 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html']
                     'width': ko.observable('100%'),
                     'height': ko.observable('100px')
             };
+
+            $super(widgets);
         },
 
         render: function($super, ele) {
@@ -32,6 +31,7 @@ define(['jquery', 'knockout', 'layouts/base', 'text!editor/layouts/single.html']
             $super(ele);
 
             this._ele = $j(template);
+            this._targetAppend = this._ele.find('.l-container > ul');
 
             // resizing behavior
             this._ele.resizable({

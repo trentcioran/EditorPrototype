@@ -20,9 +20,12 @@ define(['jquery', 'pods/base', 'knockout', 'ckeditor'], function($j, Pod, ko) {
                 'width': ko.observable('100%'),
                 'height': ko.observable('100px')
             };
+
             $super(widgets);
         },
+
         render: function($super, ele) {
+            var me = this;
             this._id = 'textPod_' + counter++;
 
             // container element
@@ -49,6 +52,16 @@ define(['jquery', 'pods/base', 'knockout', 'ckeditor'], function($j, Pod, ko) {
                     { name: 'document',    items : [ 'Source' ] }
                 ]
             });
+
+            this._editor.on('focus', function(e) {
+                $j('#topSpace').unblock();
+            });
+            this._editor.on('resize', function(e) {
+                me.metadata.height(me._ele.height() + 'px');
+            });
+
+            // update height after rendering the editor
+            this.metadata.height(me._ele.height() + 'px');
         },
 
         destroy: function($super){

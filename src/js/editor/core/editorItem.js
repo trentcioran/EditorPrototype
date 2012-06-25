@@ -49,6 +49,10 @@ define(['jquery', 'prototype', 'text!editor/core/editorItem.html', 'core/element
         _wireEvents: function() {
             var me = this, ele = this._ele;
 
+            ele.click(function() {
+                me._component.activate();
+            });
+
             // delete action
             ele.find('.modal .btn-danger').click(function() {
                 ele.find('.modal').modal('hide');
