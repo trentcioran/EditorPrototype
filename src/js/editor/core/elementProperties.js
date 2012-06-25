@@ -35,6 +35,13 @@ define(['jquery', 'knockout', 'knockout-mapping', 'prototype', 'text!editor/core
             // auto remove modal
             this._ele.modal().on('hidden', function() {
                 me._ele.detach();
+            })
+            .css({
+                width: '400px'
+            })
+            .offset({
+                left: 300,
+                top: 300
             });
         },
 

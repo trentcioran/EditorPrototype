@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="84eda97a-e9af-4638-a9d8-d766b3e9eed0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/editor/core/elementProperties.js" afterPath="$PROJECT_DIR$/src/js/editor/core/elementProperties.js" />
     </list>
     <ignored path="EditorPrototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +24,17 @@
     <favorites_list name="EditorPrototype" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="elementProperties.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/editor/core/elementProperties.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="56" selection-start="762" selection-end="762" vertical-scroll-proportion="0.29667002">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -57,8 +68,8 @@
         <option value="$PROJECT_DIR$/src/js/editor/layouts/single.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/widgetBase.js" />
         <option value="$PROJECT_DIR$/src/js/editor/core/elementProperties.html" />
-        <option value="$PROJECT_DIR$/src/js/editor/core/elementProperties.js" />
         <option value="$PROJECT_DIR$/src/style/editor.css" />
+        <option value="$PROJECT_DIR$/src/js/editor/core/elementProperties.js" />
       </list>
     </option>
   </component>
@@ -137,6 +148,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EditorPrototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EditorPrototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -258,28 +287,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EditorPrototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EditorPrototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dependency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -394,7 +401,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16130732" sideWeight="0.670082" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16130732" sideWeight="0.670082" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -477,11 +484,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/editor/pods/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="61" selection-start="129" selection-end="129" vertical-scroll-proportion="0.06861756" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/editor/core/editorArea.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="27" selection-start="592" selection-end="592" vertical-scroll-proportion="0.3220859" />
@@ -547,14 +549,25 @@
         <state line="16" column="22" selection-start="616" selection-end="616" vertical-scroll-proportion="-10.461538" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/editor/core/elementProperties.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="220" selection-end="220" vertical-scroll-proportion="0.06952965" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/editor.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="907" selection-end="907" vertical-scroll-proportion="0.9485368" />
+        <state line="40" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.6861756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="18" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.29667002">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/editor/core/elementProperties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="56" selection-start="762" selection-end="762" vertical-scroll-proportion="0.29667002">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
